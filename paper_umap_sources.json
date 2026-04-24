@@ -1,0 +1,30 @@
+{
+  "base_model_full": {
+    "view_name": "Base Model Full",
+    "source_sae_path": "saes/facebook_dinov2-small/enc_res_out_layer_8_top_k_2048_6_1.0_21215741/trainer_0",
+    "explanations_base": "outputs/facebook_dinov2-small_AutoEncoderTopK/enc_res_out_layer_8_2048_21215741",
+    "topk_images_dir": "input_features_explainer/facebook_dinov2-small_AutoEncoderTopK/enc_res_out_layer_8_2048_21215741/top_k_images/ILSVRC_imagenet-1k_mean_test_10_100000",
+    "output_png_name": "base_model_full_umap.png"
+  },
+  "outlier_only": {
+    "view_name": "Outlier Only",
+    "source_sae_path": "saes/facebook_dinov2-small/enc_res_out_layer_8_top_k_2048_6_1.0_10758825_outlier_patches_p0.0237/trainer_0",
+    "explanations_base": "outputs/facebook_dinov2-small_AutoEncoderTopK/enc_res_out_layer_8_2048_10758825",
+    "topk_images_dir": "input_features_explainer/facebook_dinov2-small_AutoEncoderTopK/enc_res_out_layer_8_2048_10758825/top_k_images/ILSVRC_imagenet-1k_mean_test_10_100000",
+    "output_png_name": "outlier_only_umap.png"
+  },
+  "register_only": {
+    "view_name": "Register Only",
+    "source_sae_path": "saes/facebook_dinov2-with-registers-small/enc_res_out_layer_8_top_k_2048_6_1.0_22192860_registers_only/trainer_0",
+    "explanations_base": "outputs/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_22192860",
+    "topk_images_dir": "input_features_explainer/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_22192860/top_k_images/ILSVRC_imagenet-1k_mean_test_10_100000",
+    "output_png_name": "register_only_umap.png"
+  },
+  "register_model_full": {
+    "view_name": "Register Model Full",
+    "source_sae_path": "saes/facebook_dinov2-with-registers-small/enc_res_out_layer_8_top_k_2048_6_1.0_24096850/trainer_0",
+    "explanations_base": "outputs/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_24096850",
+    "topk_images_dir": "input_features_explainer/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_24096850/top_k_images/ILSVRC_imagenet-1k_mean_test_10_100000",
+    "output_png_name": "register_model_full_umap.png"
+  }
+}

@@ -6,3 +6,5 @@ umap-learn
 datamapplot
 matplotlib
 transformers
+pillow
+scikit-learn
