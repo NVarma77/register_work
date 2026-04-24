@@ -1,0 +1,276 @@
+# LLM model configuration moved from demo_config.py
+# dtype values are strings and will be mapped to torch dtypes in code.
+
+"google/vit-base-patch16-224":
+  llm_batch_size: 128
+  context_length: 197
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 768
+  model_path: "google/vit-base-patch16-224"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224
+
+"google/paligemma2-3b-mix-224":
+  llm_batch_size: 64
+  context_length: 256
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1152
+    dec: 2304
+  model_path: "google/paligemma2-3b-mix-224"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 224
+
+"google/paligemma2-10b-mix-224":
+  llm_batch_size: 32
+  context_length: 256
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1152
+    dec: 3584
+  model_path: "google/paligemma2-10b-mix-224"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 224
+
+"google/paligemma2-28b-mix-224":
+  llm_batch_size: 32
+  context_length: 256
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1152
+    dec: 4608
+  model_path: "google/paligemma2-28b-mix-224"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 224
+
+"google/paligemma2-3b-pt-224":
+  llm_batch_size: 64
+  context_length: 256
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1152
+    dec: 2304
+  model_path: "google/paligemma2-3b-pt-224"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 224
+
+"google/siglip-so400m-patch14-224":
+  llm_batch_size: 64
+  context_length: 256
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 1152
+  model_path: "google/siglip-so400m-patch14-224"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224
+
+"google/siglip-so400m-patch14-384":
+  llm_batch_size: 64
+  context_length: 729
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 1152
+  model_path: "google/siglip-so400m-patch14-384"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 384
+
+"google/siglip2-so400m-patch14-224":
+  llm_batch_size: 64
+  context_length: 256
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 1152
+  model_path: "google/siglip2-so400m-patch14-224"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224
+
+"google/siglip2-so400m-patch16-512":
+  llm_batch_size: 64
+  context_length: 1024
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 1152
+  model_path: "google/siglip2-so400m-patch16-512"
+  model_type: "vision"
+  model_patch_size: 16
+  model_img_size: 512
+
+"facebook/dinov2-base":
+  llm_batch_size: 512
+  context_length: 257
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 768
+  model_path: "facebook/dinov2-base"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224
+
+"openai/clip-vit-large-patch14":
+  llm_batch_size: 256
+  context_length: 256
+  sae_batch_size: 8192
+  dtype: float32
+  activation_dim: 1024
+  model_path: "openai/clip-vit-large-patch14"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224
+
+"google/gemma-3-270m-it":
+  llm_batch_size: 64
+  context_length: 1024
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 640
+  model_path: "google/gemma-3-270m-it"
+  model_type: "lm"
+
+"google/gemma-3-1b-it":
+  llm_batch_size: 32
+  context_length: 1024
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 1152
+  model_path: "google/gemma-3-1b-it"
+  model_type: "lm"
+
+"google/gemma-3-4b-it":
+  llm_batch_size: 128
+  context_length: 4096
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1152
+    dec: 2560
+  model_path: "google/gemma-3-4b-it"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 896
+  vision_model: "vision_tower.vision_model"
+
+"google/gemma-3-12b-it":
+  llm_batch_size: 64
+  context_length: 4096
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1152
+    dec: 3840
+  model_path: "google/gemma-3-12b-it"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 896
+  vision_model: "vision_tower.vision_model"
+
+"google/gemma-3-27b-it":
+  llm_batch_size: 128
+  context_length: 1024
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1152
+    dec: 5376
+  model_path: "google/gemma-3-27b-it"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 896
+  vision_model: "vision_tower.vision_model"
+
+"Qwen/Qwen2-VL-7B-Instruct":
+  llm_batch_size: 64
+  context_length: 256
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 3584
+    dec: 3584
+  model_path: "Qwen/Qwen2-VL-7B-Instruct"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 224
+  vision_model: "visual"
+  vision_model_layer: "visual.blocks"
+
+"OpenGVLab/InternVL3-1B-Instruct":
+  llm_batch_size: 64
+  context_length: 1024
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1024
+    dec: 896
+  model_path: "OpenGVLab/InternVL3-1B-Instruct"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 448
+
+"OpenGVLab/InternVL3-14B":
+  llm_batch_size: 64
+  context_length: 1024
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim:
+    enc: 1024
+    dec: 5120
+  model_path: "OpenGVLab/InternVL3-14B"
+  model_type: "vlm"
+  model_patch_size: 14
+  model_img_size: 448
+
+"facebook/dinov2-small":
+  llm_batch_size: 64
+  context_length: 257
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 384
+  model_path: "facebook/dinov2-small"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224
+
+"facebook/dinov2-with-registers-small":
+  llm_batch_size: 64
+  context_length: 261
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 384
+  model_path: "facebook/dinov2-with-registers-small"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224
+
+"facebook/dinov2-base":
+  llm_batch_size: 64
+  context_length: 257
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 768
+  model_path: "facebook/dinov2-base"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224
+
+"facebook/dinov2-with-registers-base":
+  llm_batch_size: 64
+  context_length: 261
+  sae_batch_size: 8192
+  dtype: bfloat16
+  activation_dim: 768
+  model_path: "facebook/dinov2-with-registers-base"
+  model_type: "vision"
+  model_patch_size: 14
+  model_img_size: 224

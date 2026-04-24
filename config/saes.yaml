@@ -1,0 +1,47 @@
+google/gemma-3-4b-it :
+  model_name: "google/gemma-3-4b-it"
+  saes:
+  - layer: early
+    sae_path: "/workspace/data/saes/google_gemma-3-4b-it/enc_res_out_layer_6_top_k_8192_25_1.0_HF_44499364/trainer_0"
+    top_k_images_id: "/workspace/data/heka/sae/data/input_features_explainer/google_gemma-3-4b-it_AutoEncoderTopK/enc_res_out_layer_6_8192_44499364/top_k_images/ILSVRC_imagenet-1k_mean_test_50000"
+    outputs_path: "/workspace/data/heka/sae/data/outputs/google_gemma-3-4b-it_AutoEncoderTopK/enc_res_out_layer_6_8192_44499364"
+  - layer: mid
+    sae_path: "/workspace/data/saes/google_gemma-3-4b-it/enc_res_out_layer_16_top_k_8192_25_1.0_HF_22191080/trainer_0"
+    top_k_images_id: "/workspace/data/input_features_explainer/google_gemma-3-4b-it_AutoEncoderTopK/enc_res_out_layer_16_8192_22191080/top_k_images/ILSVRC_imagenet-1k_mean_test_5_128"
+    outputs_path: "/workspace/data/outputs/google_gemma-3-4b-it_AutoEncoderTopK/enc_res_out_layer_16_8192_22191080"
+  - layer: later
+    sae_path: "/workspace/data/saes/google_gemma-3-4b-it/enc_res_out_layer_24_top_k_8192_25_1.0_HF_17414337/trainer_0"
+    top_k_images_id: "/workspace/data/heka/sae/data/input_features_explainer/google_gemma-3-4b-it_AutoEncoderTopK/enc_res_out_layer_24_8192_17414337/top_k_images/ILSVRC_imagenet-1k_mean_test_50000"
+    outputs_path: "/workspace/data/heka/sae/data/outputs/google_gemma-3-4b-it_AutoEncoderTopK/enc_res_out_layer_24_8192_17414337"
+
+OpenGVLab/InternVL3-14B :
+  model_name: "OpenGVLab/InternVL3-14B"
+  saes:
+  - layer: early
+    sae_path: "/workspace/data/saes/OpenGVLab_InternVL3-14B/enc_res_out_layer_6_top_k_8192_25_1.0_HF_28172052/trainer_0"
+    top_k_images_id: "/workspace/data/heka/sae/data/input_features_explainer/OpenGVLab_InternVL3-14B_AutoEncoderTopK/enc_res_out_layer_6_8192_28172052/top_k_images/ILSVRC_imagenet-1k_mean_test_50000"
+    outputs_path: "/workspace/data/heka/sae/data/outputs/OpenGVLab_InternVL3-14B_AutoEncoderTopK/enc_res_out_layer_6_8192_28172052"
+  - layer: mid
+    sae_path: "/workspace/data/saes/OpenGVLab_InternVL3-14B/enc_res_out_layer_16_top_k_8192_25_1.0_HF_33531160/trainer_0"
+    top_k_images_id: "/workspace/data/heka/sae/data/input_features_explainer/OpenGVLab_InternVL3-14B_AutoEncoderTopK/enc_res_out_layer_16_8192_33531160/top_k_images/ILSVRC_imagenet-1k_mean_test_50000"
+    outputs_path: "/workspace/data/heka/sae/data/outputs/OpenGVLab_InternVL3-14B_AutoEncoderTopK/enc_res_out_layer_16_8192_33531160"
+  - layer: later
+    sae_path: "/workspace/data/saes/OpenGVLab_InternVL3-14B/enc_res_out_layer_18_top_k_8192_25_1.0_HF_84890025/trainer_0"
+    top_k_images_id: "/workspace/data/heka/sae/data/input_features_explainer/OpenGVLab_InternVL3-14B_AutoEncoderTopK/enc_res_out_layer_18_8192_84890025/top_k_images/ILSVRC_imagenet-1k_mean_test_50000"
+    outputs_path: "/workspace/data/heka/sae/data/outputs/OpenGVLab_InternVL3-14B_AutoEncoderTopK/enc_res_out_layer_18_8192_84890025"
+
+facebook/dinov2-small :
+  model_name: "facebook/dinov2-small"
+  saes:
+  - layer: mid
+    sae_path: "/lambda/nfs/tokenWorkViT/HF-SAE-main/saes/facebook_dinov2-small/enc_res_out_layer_8_top_k_128_6_1.0_24161611/trainer_0"
+    top_k_images_id: "/lambda/nfs/tokenWorkViT/HF-SAE-main/input_features_explainer/facebook_dinov2-small_AutoEncoderTopK/enc_res_out_layer_8_128_24161611/top_k_images/ILSVRC_imagenet-1k_mean_validation_5_50000"
+    outputs_path: "/lambda/nfs/tokenWorkViT/HF-SAE-main/outputs/dinov2-small/mid"
+
+facebook/dinov2-with-registers-small :
+  model_name: "facebook/dinov2-with-registers-small"
+  saes:
+  - layer: mid
+    sae_path: "/lambda/nfs/tokenWorkViT/HF-SAE-main/saes/facebook_dinov2-with-registers-small/enc_res_out_layer_8_top_k_2048_6_1.0_24096850/trainer_0"
+    top_k_images_id: "/lambda/nfs/tokenWorkViT/HF-SAE-main/input_features_explainer/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_24096850/top_k_images/ILSVRC_imagenet-1k_mean_test_10_100000"
+    outputs_path: "/lambda/nfs/tokenWorkViT/HF-SAE-main/outputs/dinov2-with-registers-small/mid"

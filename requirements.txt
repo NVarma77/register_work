@@ -8,3 +8,10 @@ matplotlib
 transformers
 pillow
 scikit-learn
+python-dotenv
+datasets
+pyyaml
+einops
+jaxtyping
+opencv-python
+wandb

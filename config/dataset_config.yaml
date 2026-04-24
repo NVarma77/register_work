@@ -1,0 +1,23 @@
+"Bingsu/Cat_and_Dog":
+  path: null
+  eval_split: "test"
+  text_column: null
+  image_column: "image"
+
+"NeelNanda/pile-10k":
+  path: "NeelNanda/pile-10k"
+  eval_split: "test"
+  text_column: "text"
+  image_column: null
+
+"ILSVRC/imagenet-1k":
+  path: null
+  eval_split: "validation"
+  text_column: null
+  image_column: "image"
+
+"minipile":
+  path: null
+  eval_split: "test"
+  text_column: "text"
+  image_column: null
