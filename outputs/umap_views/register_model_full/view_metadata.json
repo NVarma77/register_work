@@ -1,0 +1,7 @@
+{
+  "view_name": "Register Model Full",
+  "umap_png": "outputs/umap_views/register_model_full/register_model_full_umap.png",
+  "sae_path": "saes/facebook_dinov2-with-registers-small/enc_res_out_layer_8_top_k_2048_6_1.0_24096850/trainer_0",
+  "topk_images_dir": "input_features_explainer/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_24096850/top_k_images/ILSVRC_imagenet-1k_mean_test_10_100000",
+  "explanations_dir": "outputs/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_24096850/HF_easy3_masks_TOPK-5_MODEL-google_gemma-3-4b-it_RNDTOPK-False_SIZE-100000"
+}

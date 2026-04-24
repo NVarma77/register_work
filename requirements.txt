@@ -1,0 +1,8 @@
+numpy
+torch
+tqdm
+sentence-transformers
+umap-learn
+datamapplot
+matplotlib
+transformers

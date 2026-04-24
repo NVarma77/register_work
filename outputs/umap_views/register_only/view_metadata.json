@@ -1,0 +1,7 @@
+{
+  "view_name": "Register Only",
+  "umap_png": "outputs/umap_views/register_only/register_only_umap.png",
+  "sae_path": "saes/facebook_dinov2-with-registers-small/enc_res_out_layer_8_top_k_2048_6_1.0_22192860_registers_only/trainer_0",
+  "topk_images_dir": "input_features_explainer/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_22192860/top_k_images/ILSVRC_imagenet-1k_mean_test_10_100000",
+  "explanations_dir": "outputs/facebook_dinov2-with-registers-small_AutoEncoderTopK/enc_res_out_layer_8_2048_22192860/HF_easy3_images_TOPK-5_MODEL-google_gemma-3-4b-it_RNDTOPK-False_SIZE-100000"
+}

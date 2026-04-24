@@ -1,0 +1,7 @@
+{
+  "view_name": "Outlier Only",
+  "umap_png": "outputs/umap_views/outlier_only/outlier_only_umap.png",
+  "sae_path": "saes/facebook_dinov2-small/enc_res_out_layer_8_top_k_2048_6_1.0_10758825_outlier_patches_p0.0237/trainer_0",
+  "topk_images_dir": "input_features_explainer/facebook_dinov2-small_AutoEncoderTopK/enc_res_out_layer_8_2048_10758825/top_k_images/ILSVRC_imagenet-1k_mean_test_10_100000",
+  "explanations_dir": "outputs/facebook_dinov2-small_AutoEncoderTopK/enc_res_out_layer_8_2048_10758825/HF_easy3_masks_TOPK-5_MODEL-google_gemma-3-4b-it_RNDTOPK-False_SIZE-100000"
+}
